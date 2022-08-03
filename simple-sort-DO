@@ -1,0 +1,35 @@
+#include <stdio.h>
+int main()
+{
+   int a[10],n;
+   int big;
+   printf("Enter the numbers of values: ");
+   scanf("%d",&n);
+   printf("Enter the numbers: ");
+   
+   for(int i=0;i<n;i++)
+   {
+	scanf("%d",&a[i]);
+   }
+   for(int i=0;i<n;i++)
+   {
+	for(int j=0;j<n;j++)
+	{
+		while(a[i]>a[j]&&i!=j)                      		                      
+		{   
+		int t;                       
+           t=a[i];
+		   a[i]=a[j];
+		   a[j]=t;          
+		                       
+		}
+	}
+   }
+   for(int i=0;i<n;i++)
+   {
+	printf("%d ",a[i]);
+   }
+     
+   	return 0;
+}
+
