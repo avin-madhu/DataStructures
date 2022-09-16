@@ -16,9 +16,34 @@ bubbleSort(int arr[],int n)
     }
    }
 }
+
+binSearch(int arr[],int n,int num)
+{
+  int top=0,bot=n-1;
+
+  while (top<=bot)
+  {
+    int mid=(top+bot)/2;
+
+    if(arr[mid]==num)
+    {
+        return mid;
+    }
+    else if(arr[mid]<num) 
+    {
+      top=mid-1;
+    }
+    else
+    {
+      bot =mid+1;
+    }
+  }
+  return -1;
+}
+
 int main()
 {
-   int arr[100],n;
+   int arr[100],n,num,check;
    printf("Enter the number of Elements: ");
    scanf("%d",&n);
    printf("Enter the elements: ");
@@ -29,10 +54,24 @@ int main()
    }
 
    bubbleSort(arr,n);
-   
+
    for (int i = 0; i < n; i++)
    {
       printf("%d ",arr[i]);
+   }
+   printf("\n");
+   printf("Enter the number to be searched: ");
+   scanf("%d",&num);
+
+   check = binSearch(arr,n,num);
+  
+   if(check==-1)
+   {
+    printf("Element not found!!");
+   }
+   else
+   {
+    printf("Element is found at position %d",check);
    }
    
 }
