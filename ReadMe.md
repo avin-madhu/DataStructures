@@ -3,6 +3,10 @@
 
 ## SORTING PROGRAMS
 
-* Bubble Sort
+* Bubble Sort 
 * Binary Sort
 
+## SEARCHING PROGRAMS
+
+* Linear Search
+* Binary Search 
