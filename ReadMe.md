@@ -7,7 +7,7 @@
 ## Sorting Programs
 
 * Bubble Sort    &nbsp;&nbsp; - [Algorithm](Algorithms/bubbleSort.md
-) | [Code](Sortingprograms/bubbleSort.c)
+) | [Code](SortingPrograms/bubbleSort.c)
 * Selection Sort - [Algorithm](Algorithms/selectionSort.md) | 
 * Insertion Sort - [Algorithm](Algorithms/insertionSort.md) |
 
