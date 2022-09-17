@@ -1,8 +1,16 @@
-# Data Structures 
-# KTU S3 LAB - 2022
+# DATA STRUCTURES
 
-## SORTING PROGRAMS
+### --KTU S3 LAB - 2022--
+<BR><BR>
 
-* Bubble Sort
-* Binary Sort
+## Sorting Programs
+
+* Bubble Sort    &nbsp;&nbsp; - [Algorithm](Algorithms/bubbleSort.md
+)
+* Selection Sort - [Algorithm](Algorithms/selectionSort.md)
+
+## Searching Programs
+
+* Linear Search - [Algorithm](Algorithms/linearSearch.md)
+* Binary Search - [Algorithm](Algorithms/binarySearch.md)
 
