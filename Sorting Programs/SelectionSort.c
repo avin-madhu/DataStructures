@@ -12,7 +12,7 @@ void selectSort(int arr[],int n)
         ind=j;
       }
     }
-    int temp=arr[i];
+        int temp=arr[i];
         arr[i]=arr[ind];
         arr[ind]=temp;
   }

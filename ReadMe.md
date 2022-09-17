@@ -9,6 +9,7 @@
 * Bubble Sort    &nbsp;&nbsp; - [Algorithm](Algorithms/bubbleSort.md
 )
 * Selection Sort - [Algorithm](Algorithms/selectionSort.md)
+* Insertion Sort - [Algorithm](Algorithms/insertionSort.md)
 
 ## Searching Programs
 
