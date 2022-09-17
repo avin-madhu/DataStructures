@@ -1,4 +1,19 @@
 #include<stdio.h>
+void insrSort(int arr[],int n)
+{
+    
+    for(int i=1;i<n;i++)
+    {
+      int current=arr[i];
+      int j=i-1;
+      while(arr[j]>current&&j>=0)
+      {
+        arr[j+1]=arr[j];
+        j--;
+      }
+      arr[j+1]=current;
+    }
+}
 int main()
 {
     int arr[100];
@@ -17,18 +32,7 @@ int main()
     printf("The sorted array is: ");
     printf("\n");
 
-
-    for(int i=1;i<n;i++)
-    {
-      int current=arr[i];
-      int j=i-1;
-      while(arr[j]>current&&j>=0)
-      {
-        arr[j+1]=arr[j];
-        j--;
-      }
-      arr[j+1]=current;
-    }
+    insrSort(arr,n);
 
     for(int i=0;i<n;i++)
     {
