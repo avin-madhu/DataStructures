@@ -7,13 +7,13 @@
 ## Sorting Programs
 
 * Bubble Sort    &nbsp;&nbsp; - [Algorithm](Algorithms/bubbleSort.md
-)
-* Selection Sort - [Algorithm](Algorithms/selectionSort.md)
-* Insertion Sort - [Algorithm](Algorithms/insertionSort.md)
+) | [Code](Sortingprograms/bubbleSort.c)
+* Selection Sort - [Algorithm](Algorithms/selectionSort.md) | 
+* Insertion Sort - [Algorithm](Algorithms/insertionSort.md) |
 
 ## Searching Programs
 
-* Linear Search - [Algorithm](Algorithms/linearSearch.md)
-* Binary Search - [Algorithm](Algorithms/binarySearch.md)
+* Linear Search - [Algorithm](Algorithms/linearSearch.md) |
+* Binary Search - [Algorithm](Algorithms/binarySearch.md) |
 
 
