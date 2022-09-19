@@ -23,7 +23,7 @@ int partition(int arr[],int start,int end)
 
     }while (i<j);
 
-    temp = arr[start];
+    temp = arr[start];// swapping key with element at j
     arr[start]=arr[j];
     arr[j]=temp;
 
@@ -35,9 +35,9 @@ void QuickSort(int arr[],int start,int end)
 {
     if(start<end)
     {     
-      int index=partition(arr,start,end);//  1 4 2 6 3 7
-      QuickSort(arr,start,index-1);
-      QuickSort(arr,index+1,end);
+      int index=partition(arr,start,end);
+      QuickSort(arr,start,index-1);// for sorting left partition
+      QuickSort(arr,index+1,end);// for sorting right partion
     }
 }
 int  main()

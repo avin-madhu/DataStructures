@@ -10,6 +10,7 @@
 ) &nbsp; | &nbsp;[Code](Sorting_Programs/bubbleSort.c)
 * Selection Sort - [Algorithm](Algorithms/selectionSort.md) &nbsp; | &nbsp;[Code](Sorting_Programs/SelectionSort.c)
 * Insertion Sort - [Algorithm](Algorithms/insertionSort.md) &nbsp; &nbsp;| &nbsp;[Code](Sorting_Programs/InsertionSort.c)
+* Quick sort - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Algorithm](Algorithms/quickSort.md) &nbsp;&nbsp; |&nbsp; [code](Sorting_Programs/Quicksort.c)
 
 ## Searching Programs
 
