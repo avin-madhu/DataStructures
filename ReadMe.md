@@ -4,17 +4,12 @@
 ### --KTU S3 LAB - 2022--
 <BR>
 
-## Sorting Programs
-
-* Bubble Sort    &nbsp;&nbsp; - [Algorithm](Algorithms/bubbleSort.md
-) &nbsp; | &nbsp;[Code](Sorting_Programs/bubbleSort.c)
-* Selection Sort - [Algorithm](Algorithms/selectionSort.md) &nbsp; | &nbsp;[Code](Sorting_Programs/SelectionSort.c)
-* Insertion Sort - [Algorithm](Algorithms/insertionSort.md) &nbsp; &nbsp;| &nbsp;[Code](Sorting_Programs/InsertionSort.c)
-* Quick sort - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Algorithm](Algorithms/quickSort.md) &nbsp;&nbsp; |&nbsp; [code](Sorting_Programs/Quicksort.c)
-
-## Searching Programs
-
-* Linear Search - [Algorithm](Algorithms/linearSearch.md) &nbsp; | &nbsp;[Code](Searching_Programs/LinearSearch.c)
-* Binary Search - [Algorithm](Algorithms/binarySearch.md) &nbsp;&nbsp;| &nbsp;[Code](Searching_Programs/BinarySearch.c)
-
-
+## Sorting Algorithms
+  
+|Sno:| Method        |  Code          | Algorithm   |
+|----| ------------- | ------------- |-------------|
+|1   | Bubble Sort   | [code](Sorting)          |  Algorithm   |
+|2   | Insertion Sort| Code          | Algorithm   |
+|3   | Selection Sort| Code          | Algorithm   |
+|4   | Quik Sort     | Code          | Algorithm   |
+|5   | Merge Sort    | Code          | Algorithm   |
