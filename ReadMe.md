@@ -3,6 +3,11 @@
 <h2 align="center">--KTU S3 LAB - 2022--<h2>
 <BR>
 
+## contents
+
+* [Sorting algorithms](https://github.com/avin-madhu/DataStructure/edit/main/ReadMe.md#sorting-algorithms)
+* [Searching algorithms](https://github.com/avin-madhu/DataStructure/edit/main/ReadMe.md#searching-algorithms)
+
 ## Sorting Algorithms
   
 |Sno:| Method        |  Code          | Algorithm   |
