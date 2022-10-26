@@ -5,8 +5,8 @@
 
 ## contents
 
-* [Sorting algorithms](https://github.com/avin-madhu/DataStructure/edit/main/ReadMe.md#sorting-algorithms)
-* [Searching algorithms](https://github.com/avin-madhu/DataStructure/edit/main/ReadMe.md#searching-algorithms)
+* [Sorting algorithms](#sorting-algorithms)
+* [Searching algorithms](#searching-algorithms)
 
 ## Sorting Algorithms
   
