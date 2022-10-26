@@ -8,9 +8,27 @@ void simpleMerge(int a[],int f,int s,int t) // f = first element in arr1, s = fi
 
  while(i<s&&j<=t)
  {
-    
+    if(a[i]<a[j])
+    {
+      b[k++]=a[i++];
+    }
+    else
+    {
+      b[k++]=a[j++];
+    }
  }
-
+ while(i<s)
+ {
+   b[k++]=a[i++];
+ }
+ while(j<=t)
+ {
+   b[k++]=a[j++];
+ }
+ for(i=f,k=0;k<t;)
+ {
+   a[i++]=b[k++];
+ }
 
 }
 
@@ -22,8 +40,9 @@ void simpleMerge(int a[],int f,int s,int t) // f = first element in arr1, s = fi
    if(l<r)
    {
     mid = (l+r)/2;
-    mergeSort(a,mid+l,r);            // <-- Recursive Call
-    simpleMerge(a,l,mid+l,r);
+    mergeSort(a,l,mid-1);
+    mergeSort(a,mid+1,r);            // <-- Recursive Call
+    simpleMerge(a,l,mid+1,r);
    }
 }
 
