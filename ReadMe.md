@@ -7,6 +7,7 @@
 
 * [Sorting algorithms](#sorting-algorithms)
 * [Searching algorithms](#searching-algorithms)
+* [Stack](Stack.c)
 
 ## Sorting Algorithms
   
