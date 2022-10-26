@@ -3,6 +3,11 @@
 <h2 align="center">--KTU S3 LAB - 2022--<h2>
 <BR>
 
+## contents
+
+* [Sorting algorithms](#sorting-algorithms)
+* [Searching algorithms](#searching-algorithms)
+
 ## Sorting Algorithms
   
 |Sno:| Method        |  Code          | Algorithm   |
