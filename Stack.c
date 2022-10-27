@@ -70,6 +70,8 @@ int main()
  return 0;
 }
 
+// ----- function defintions-----
+
 int isFull()
 {
     if(top==size)
