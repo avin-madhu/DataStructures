@@ -1,7 +1,7 @@
 <h1 align="center"> DATA STRUCTURES <h1>
   
 <h2 align="center">--KTU S3 LAB - 2022--<h2>
-<BR>
+
 
 ## contents
 
