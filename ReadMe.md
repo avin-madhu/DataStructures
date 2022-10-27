@@ -8,6 +8,7 @@
 * [Sorting algorithms](#sorting-algorithms)
 * [Searching algorithms](#searching-algorithms)
 * [Stack](Stack.c)
+* [Queue](Queue.c)
 
 ## Sorting Algorithms
   
