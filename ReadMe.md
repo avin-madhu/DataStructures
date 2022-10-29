@@ -3,7 +3,7 @@
 <h2 align="center">--KTU S3 LAB - 2022--<h2>
 
 
-## contents
+## -contents-
 
 * [Sorting algorithms](#sorting-algorithms)
 * [Searching algorithms](#searching-algorithms)
