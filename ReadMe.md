@@ -9,6 +9,7 @@
 * [Searching algorithms](#searching-algorithms)
 * [Stack](Stack.c)
 * [Queue](Queue.c)
+* [Sparse Matrix]()
 
 ## Sorting Algorithms
   
