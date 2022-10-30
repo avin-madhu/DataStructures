@@ -33,7 +33,7 @@ int main()
 
    
 
-   }while (choice!=7);
+   } while (choice!=7);
     
 
 }
