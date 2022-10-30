@@ -1,13 +1,14 @@
 <h1 align="center"> DATA STRUCTURES <h1>
   
 <h2 align="center">--KTU S3 LAB - 2022--<h2>
-<BR>
 
-## contents
+
+## -contents-
 
 * [Sorting algorithms](#sorting-algorithms)
 * [Searching algorithms](#searching-algorithms)
 * [Stack](Stack.c)
+* [Queue](Queue.c)
 
 ## Sorting Algorithms
   
