@@ -9,11 +9,9 @@
 * [Searching algorithms](#searching-algorithms)
 * [Stack](Stack.c)
 * [Queue](Queue.c)
-<<<<<<< HEAD
 * [Linked List](#linked-list)
-=======
-* [Sparse Matrix]()
->>>>>>> 92284f2cf994323afbd15761a16bd18dcff7abed
+
+
 
 ## Sorting Algorithms
   
