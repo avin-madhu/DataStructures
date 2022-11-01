@@ -44,7 +44,7 @@
 
 ## Linked List
   
-  |Sno:| Method        |  Code          | 
+  |Sno:| Types of List        |  Code          | 
 |----| ------------- | ------------- |
 |1   | Singular List    | [code](LinkedList/SingularList.c)         
 |2   |Add node at start  | [code](LinkedList/addAtStart.c)                 
