@@ -38,12 +38,14 @@ int main()
                 printf("Enter the element to be pushed: ");
                 scanf("%d",&el);
                 push(el);
-             }break;
+             }
+             break;
     case 2: if(!isEmpty())
              {
                el=pop();
                printf("The element poped is: %d ",el);
-             }break;
+             }
+             break;
     case 3: x=peek();
             if(x!=-1)
             {

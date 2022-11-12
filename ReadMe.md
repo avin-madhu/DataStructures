@@ -33,11 +33,11 @@
 
 ## Stack
 
--> In stack the first element pushed is the ``first`` element to be poped.
+-> In stack the first element pushed is the ``first`` element to be poped. (LIFO)
 
 ## Queue
 
--> In Queue the first element pushed is the ``last`` element to be poped.
+-> In Queue the first element pushed is the ``last`` element to be poped. (FIFO)
 
  
 
