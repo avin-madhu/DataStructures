@@ -1,96 +1,305 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
+#define MAX 20
 
-int count=0;
-int isSparse(int r,int c,int Spar[r][c]) // logic: if number of 0s is more than half of total elements then the matrix is sparse.
+void printsparse(int b[MAX][3]);
+void readsparse(int b[MAX][3]);
+void addsparse(int b1[MAX][3],
+int b2[MAX][3],int b3[MAX][3]);
+
+void main()
 {
-   int el;
-    for(int i=0;i<r;i++)
+
+   
+int b1[MAX][3],b2[MAX][3],b3[MAX][3];  
+readsparse(b1);
+readsparse(b2);
+addsparse(b1,b2,b3);
+printsparse(b3);
+
+}     // end of main 
+
+void readsparse(int b[MAX][3])
+
+{
+
+   
+int i,t,m,n;
+
+   
+printf("Enter no. of rows and columns: ");
+
+   
+scanf(" %d%d",&m,&n);
+
+    printf("No. of non-zero triples:");
+
+   
+scanf("%d",&t);
+
+   
+b[0][0]=m;
+
+   
+b[0][1]=n;
+
+   
+b[0][2]=t;
+
+   
+for(i=1;i<=t;i++)
+
     {
-        for(int j=0;j<c;j++)
-        {
-            el = Spar[i][j];
-            if(el==0)
-            {
-                count++;
-            }
+
+       
+printf("Enter the triples(row,column,value):");
+
+       
+scanf("%d%d%d",&b[i][0],&b[i][1],&b[i][2]);
+
+    }
+
+}
+
+void addsparse(int b1[MAX][3],int
+b2[MAX][3],int b3[MAX][3])
+
+{
+
+   
+int t1,t2,i,j,k;
+
+   
+if(b1[0][0]!=b2[0][0]||b1[0][1]!=b2[0][1])
+
+    {
+
+       
+printf("You have entered invalid matrix!! Size must be equal");
+
+       
+exit(0);
+
+    }
+
+   
+t1=b1[0][2];
+
+   
+t2=b2[0][2];
+
+   
+i=j=k=0;
+
+   
+b3[0][0]=b1[0][0];
+
+   
+b3[0][1]=b1[0][1];
+
+   
+while(i<=t1&&j<=t2)
+
+    {
+
+       
+if(b1[i][0]<b2[j][0])      
+//row numbers are not equal
+
+       
+{
+
+           
+b3[k][0]=b1[i][0];
+
+           
+b3[k][1]=b1[i][1];
+
+           
+b3[k][2]=b1[i][2];
+
+           
+k++;
+
+           
+i++;
+
+       
+}
+
+       
+else if(b2[j][0]<b1[i][0])      
+//row numbers are not equal
+
+       
+{
+
+           
+b3[k][0]=b2[j][0];
+
+           
+b3[k][1]=b2[j][1];
+
+           
+b3[k][2]=b2[j][2];
+
+       
+    k++;
+
+           
+j++;
+
+       
+}
+
+       
+else if(b1[i][1]<b2[j][1])      
+//row numbers are equal, compare column
+
+       
+{
+
+           
+b3[k][0]=b1[i][0];
+
+           
+b3[k][1]=b1[i][1];
+
+           
+b3[k][2]=b1[i][2];
+
+           
+k++;
+
+           
+i++;
+
         }
-    }
-    if(count>=((r*c)/2))
-    {
-        return 1;
-    }
-    else{
-        return 0;
-    }
+
+       
+else if(b2[j][1]<b1[i][1])      
+//row numbers are equal, compare column
+
+       
+{
+
+           
+b3[k][0]=b2[j][0];
+
+           
+b3[k][1]=b2[j][1];
+
+           
+b3[k][2]=b2[j][2];
+
+           
+k++;
+
+           
+j++;
+
+       
 }
 
+       
+else
 
-void convToTuple(int r,int c,int Spar[r][c]) // convert the sparse matrix to tuple form 
+       
 {
-   int Tuple[100][3];
-   int s=0;
+
+           
+b3[k][0]=b1[i][0];      //row and column numbers are equal
+
+           
+b3[k][1]=b1[i][1];
+
+           
+b3[k][2]=b1[i][2]+b2[j][2];
+
+           
+k++;
+
+           
+i++;
+
+           
+j++;
+
+       
+}
+
+    }
+
    
-    for(int i=0;i<r;i++)
+while(i<=t1)        //copy remaining terms from b1
+
     {
-        for(int j=0;j<c;j++)
-        {
-            if(Spar[i][j]!=0)
-            {
-               Tuple[s][0]=i+1;
-               Tuple[s][1]=j+1;
-               Tuple[s][2]=Spar[i][j];
-            }
-            else
-            {
-                Tuple[i][j]=0;
-            }
-        } 
-        s++;
+
+       
+b3[k][0]=b1[i][0];
+
+       
+b3[k][1]=b1[i][1];
+
+       
+b3[k][2]=b1[i][2];
+
+       
+i++;
+
+       
+k++;
+
     }
 
-    for(int i=0;i<count+1;i++)
-    {
-       for(int j=0;j<3;j++)
-      {
-        Spar[i][j]=Tuple[i][j];
-      }
-    }
-}
-
-void printTuple(int r,int c,int Spar[r][c])
-{
-    for(int i=0;i<count+1;i++)
-    {
-       for(int j=0;j<3;j++)
-      {
-        printf("%d ",Spar[i][j]);
-      }
-      printf("\n");
-    }
-}
-
-
-int main()
-{
-    int r,c;
-    printf("Enter the number of row: ");
-    scanf("%d",&r);
-    printf("Enter the number of coloumns: ");
-    scanf("%d",&c);
-    int Spar[r][c];
-
-    printf("Enter the sparse matrix: ");  
-    
    
-    for(int i=0;i<r;i++)    // Reading the sparse matrix
+while(j<=t2)        //copy remaining terms from b2
+
     {
-       for(int j=0;j<c;j++)
-      {
-        scanf("%d", &Spar[i][j]);
-      }
+
+       
+b3[k][0]=b2[j][0];
+
+       
+b3[k][1]=b1[j][1];
+
+       
+b3[k][2]=b1[j][2];
+
+       
+j++;
+
+       
+k++;
+
     }
 
-       int check=isSparse(r,c,Spar);
-       convToTuple(r,c,Spar);
-       printTuple(r,c,Spar);
+   
+b3[0][2]=k-1;       //set number of terms in b3
+
+}
+
+void printsparse(int b[MAX][3])
+
+{
+
+   
+int i,t;
+
+   
+t=b[0][2];
+
+   
+printf("nrowtcolumntvalue");
+
+   
+for(i=1;i<=t;i++)
+
+    {
+
+       
+printf("n%dt%dt%d",b[i][0],b[i][1],b[i][2]);
+
+    }
+
 }

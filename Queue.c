@@ -1,152 +1,110 @@
 #include <stdio.h>
-
-int isFull();    // <== funtion prototypes
-int isEmpty();
-int peek();
-void enqueue();
-int  dequeue();
-void display();
-
-int size=50;
-int Queue[50],f=-1,r=-1,el; // <== declared a Queue(array) of size 50 (globally)
-
-int main()
-{
-   int choice=0,n,x=0;
-   printf("Enter the number of elements: ");
-   scanf("%d",&n);
-   printf("Enter the elements of the Queue: ");
-   f=r=0;
-   for(int i=0;i<n;i++)
-   {
-    scanf("%d",&Queue[i]);
-    r++;
-   }
-   
-   do
-   {
-    printf("\n\n     Menu\n");
-   printf("--------------\n");
-   printf(" 1.enqueue\n 2.dequeue\n 3.peek\n 4.isFull\n 5.isEmpty\n 6.display Queue\n 7.Exit");
-   printf("\n\n Enter your Choice: ");
-   scanf("%d",&choice);
-
-   switch(choice)
-   {
-    case 1: if(!isFull())
-             {
-                printf("Enter the element to be enqueueed: ");
-                scanf("%d",&el);
-                enqueue(el);
-             }
-             break;
-             
-    case 2: if(!isEmpty())
-             {
-               el=dequeue();
-               printf("The element dequeueed is: %d ",el);
-             }
-             break;
-    case 3: x=peek();
-            if(x!=-1)
-            {
-                printf("Element is present at Top at index: %d",top);
-            }
-            x=0;
-             break;   
-
-    case 4: isFull();break;
-
-    case 5: isEmpty();break;
-
-    case 6: display();break;
-
-    case 7: break;
-
-    default: printf("Invalid Input!!");
-   }
-
-   printf("\nDo you want to exit (Enter 7)? else enter any other number: ");
-   scanf("%d",&choice);
-   } while (choice!=7);
-   
- return 0;
-}
-
-// ----- function defintions-----
+#include <math.h>
+#define size 50
+int queue[size];
+int f=-1,r=-1,el=0;
 
 int isFull()
 {
-    if(r==size)
-    {
-      printf(" Queue is Full!!");
-      return 1;
-    }
-    else
-    {
-        printf(" Queue have space left\n");
-       return 0;
-    }
+   if(f==(r+1)%size)
+   return 1;
+   else
+   return 0;
 }
-
 int isEmpty()
 {
-    if(top==0)
-    {
-        printf(" Queue is Empty!!");
-        return 1;
-    }
-    else
-    {
-        printf(" Queue have elements present\n");
-        return 0;
-    }
+   if(f==-1&&r==-1)
+   return 1;
+   else
+   return 0;
 }
-
-int dequeue()
+void enqueue(int el)
 {
+   if(isFull())
+   {
+   printf("The queue is empty!! cannot remove element!"); return;
+   }
+else
+   {
+   if(isEmpty())
+   {
+      f=r=0;
+      queue[r++]=el;
+   }
+else
+  {
+   queue[r]=el;
+   r=(r+1)%size;
+   }
+  }
+}
+void dequeue()
+   {
     if(isEmpty())
+     {
+      printf("The queue is Empty!, deletion not possible."); return;
+     }
+  else
+  {
+    if(f==r)
     {
-        printf(" Queue is Empty !!");
+    el = queue[f];
+    printf("%d is removed!",el);
+    f=r=-1;
+    return;
     }
-    else
-    {
-        return Queue[--top];
-    }
-    return -1;
+else
+   {
+   el = queue[f];
+   printf("%d is removed!",el);
+   f=(f+1)%size;
+   return;
+   }
+  }
 }
-
-void enqueue()
-{
-    if(isFull())
-    {
-        printf("Queue is Full !!");
-    }
-    else
-    {
-        Queue[top++]=el;
-    }
-}
-
-int peek()
-{
-    if(isEmpty())
-    {
-        printf("Queue is Empty!!");
-    }
-    else
-    {
-       return top--;
-    }
-    return -1;
-}
-
 void display()
+  {
+   for(int i=f;i<r;i++)
+   printf("%d ",queue[i]);
+  }
+int main()
 {
-    for(int i=0;i<top;i++)
-    {
-       printf(" %d",Queue[i]);
-    }
+int choicer,choice,flag=0;
+do
+{
+printf("Menu list\n--------------------------\n\n1. Insert\n2. Delete\n3. display\n4. is Full?\n5. is Empty?\n6.Exit\n");
+printf("Enter your choice: ");
+scanf("%d",&choicer);
+switch(choicer)
+{
+case 1: printf("Enter the element: ");
+scanf("%d",&el);
+enqueue(el);break;
+
+case 2: dequeue();
+break;
+
+case 3: display();break;
+
+case 4: flag = isFull();
+        if(flag==1)
+        printf("The queue is Full!");
+        else
+        printf("The queue is not full");break;
+
+case 5: flag = isEmpty();
+        if(flag==1)
+        printf("The queue is Empty!");
+        else
+        printf("The queue is not Empty");break;
+case 6:break;
+
+default: printf("Invalid Entry!!"); break;
 }
 
+printf("Do you want to continue? ");
+printf("----------------------\n Press 1 for YES\nPress 5 for NO\nChoice => ");
+scanf("%d",&choice);
+ }while(choice!=5);
 
+}

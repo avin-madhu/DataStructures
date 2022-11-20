@@ -19,15 +19,21 @@ void selectSort(int arr[],int n)
 }
 int main()
 {
-  int arr[100]={4,2,6,1,5,3};
-  int n=6;
-   
-  selectSort(arr,n);
+  int arr[100];
+  int n;
+   printf("Enter the number of elements: ");
+    scanf("%d",&n);
+    printf("\n");
+    printf("Enter the element: ");
 
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+
+  selectSort(arr,n);
   for(int i=0;i<n;i++)
   {
     printf("%d ",arr[i]);
   }
-
-
   }
