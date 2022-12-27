@@ -22,7 +22,7 @@
 |3   | Selection Sort| [code](Sorting_Programs/SelectionSort.c)          | [Algorithms](Algorithms/selectionSort.md)   |
 |4   | Quick Sort     | [code](Sorting_Programs/Quicksort.c)          | [Algorithms](Algorithms/quickSort.md)   |
 |5   | Merge Sort    | [code](Sorting_Programs/MergeSort.c)         | [Algorithms](Algorithms/MergeSort.md)  |
-|6   | Heap Sort    | [code](Sorting_Programs/MergeSort.c)         | [Algorithms](Algorithms/MergeSort.md)  |
+|6   | Heap Sort    | [code](Sorting_Programs/heapSort.c)         | [Algorithms](Algorithms/heapSort.md)  |
 
   
 ## Searching Algorithms
@@ -37,9 +37,9 @@
 -> In stack the first element pushed is the ``first`` element to be poped. (LIFO)
  |Sno:| program        |  Code          | Algorithm   |
 |----| ------------- | ------------- |-------------|
-|1   | stack using array    | [code](stack.c)          |  [Algorithms](Algorithms/linearSearch.md)   |
-|2   | stack using linked list   | [code](Searching_Programs/BinarySearch.c)          | [Algorithms](Algorithms/binarySearch.md)   |
-|3  | infix to postfix using stack  | [code](Searching_Programs/BinarySearch.c)          | [Algorithms](Algorithms/binarySearch.md)   |
+|1   | stack using array    | [code](stackUsingArray.c)          |  [Algorithms](Algorithms/linearSearch.md)   |
+|2   | stack using linked list   | [code](stackUsingList.c)          | [Algorithms](Algorithms/binarySearch.md)   |
+|3  | infix to postfix using stack  | [code](infixToPostfix.c)          | [Algorithms](Algorithms/binarySearch.md)   |
 
 
 ## Queue
@@ -48,7 +48,7 @@
  |Sno:| program        |  Code          | Algorithm   |
 |----| ------------- | ------------- |-------------|
 |1   | circular queue   | [code](Queue.c)          |  [Algorithms](Algorithms/linearSearch.md)   |
-|2   | queue using linked list   | [code](Searching_Programs/BinarySearch.c)          | [Algorithms](Algorithms/binarySearch.md)   |
+|2   | queue using linked list   | [code](queueUsingList.c)          | [Algorithms](Algorithms/binarySearch.md)   |
  
 
 
