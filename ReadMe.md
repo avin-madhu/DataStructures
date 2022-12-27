@@ -22,6 +22,7 @@
 |3   | Selection Sort| [code](Sorting_Programs/SelectionSort.c)          | [Algorithms](Algorithms/selectionSort.md)   |
 |4   | Quick Sort     | [code](Sorting_Programs/Quicksort.c)          | [Algorithms](Algorithms/quickSort.md)   |
 |5   | Merge Sort    | [code](Sorting_Programs/MergeSort.c)         | [Algorithms](Algorithms/MergeSort.md)  |
+|6   | Heap Sort    | [code](Sorting_Programs/MergeSort.c)         | [Algorithms](Algorithms/MergeSort.md)  |
 
   
 ## Searching Algorithms
@@ -34,11 +35,20 @@
 ## Stack
 
 -> In stack the first element pushed is the ``first`` element to be poped. (LIFO)
+ |Sno:| program        |  Code          | Algorithm   |
+|----| ------------- | ------------- |-------------|
+|1   | stack using array    | [code](Searching_Programs/LinearSearch.c)          |  [Algorithms](Algorithms/linearSearch.md)   |
+|2   | stack using linked list   | [code](Searching_Programs/BinarySearch.c)          | [Algorithms](Algorithms/binarySearch.md)   |
+|3  | infix to postfix using stack  | [code](Searching_Programs/BinarySearch.c)          | [Algorithms](Algorithms/binarySearch.md)   |
+
 
 ## Queue
 
 -> In Queue the first element pushed is the ``last`` element to be poped. (FIFO)
-
+ |Sno:| program        |  Code          | Algorithm   |
+|----| ------------- | ------------- |-------------|
+|1   | circular queue   | [code](Searching_Programs/LinearSearch.c)          |  [Algorithms](Algorithms/linearSearch.md)   |
+|2   | queue using linked list   | [code](Searching_Programs/BinarySearch.c)          | [Algorithms](Algorithms/binarySearch.md)   |
  
 
 
@@ -47,7 +57,9 @@
   |Sno:| Types of List        |  Code          | 
 |----| ------------- | ------------- |
 |1   | Singular List    | [code](LinkedList/SingularList.c)         
-|2   |Add node at start  | [code](LinkedList/addAtStart.c)                 
-|3  |Add node at End  | [code](LinkedList/addAtEnd.c)        
-|4  |Add node at given position   | [code](LinkedList/addAtRandom.c)          
+|2   |Add node at start (singley)  | [code](LinkedList/addAtStart.c)                 
+|3  |Add node at End (singley) | [code](LinkedList/addAtEnd.c)        
+|4  |Add node at given position (singley)  | [code](LinkedList/addAtRandom.c)
+|4  | Doubley linked List  | [code](LinkedList/addAtRandom.c)
+|4  | Polynomial Addition using LinkedList  | [code](LinkedList/addAtRandom.c)
 
