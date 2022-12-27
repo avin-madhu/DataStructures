@@ -39,7 +39,7 @@
 |----| ------------- | ------------- |-------------|
 |1   | stack using array    | [code](stackUsingArray.c)          |  [Algorithms](Algorithms/linearSearch.md)   |
 |2   | stack using linked list   | [code](stackUsingList.c)          | [Algorithms](Algorithms/binarySearch.md)   |
-|3  | infix to postfix using stack  | [code](infixToPostfix.c)          | [Algorithms](Algorithms/binarySearch.md)   |
+|3  | infix to postfix using stack  | [code](infixToPostFix.c)          | [Algorithms](Algorithms/binarySearch.md)   |
 
 
 ## Queue
