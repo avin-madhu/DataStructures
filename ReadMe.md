@@ -7,8 +7,8 @@
 
 * [Sorting algorithms](#sorting-algorithms)
 * [Searching algorithms](#searching-algorithms)
-* [Stack](Stack.c)
-* [Queue](Queue.c)
+* [Stack](#stack)
+* [Queue](#Queue)
 * [Linked List](#linked-list)
 
 
