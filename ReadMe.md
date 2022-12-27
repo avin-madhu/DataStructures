@@ -37,7 +37,7 @@
 -> In stack the first element pushed is the ``first`` element to be poped. (LIFO)
  |Sno:| program        |  Code          | Algorithm   |
 |----| ------------- | ------------- |-------------|
-|1   | stack using array    | [code](Searching_Programs/LinearSearch.c)          |  [Algorithms](Algorithms/linearSearch.md)   |
+|1   | stack using array    | [code](stack.c)          |  [Algorithms](Algorithms/linearSearch.md)   |
 |2   | stack using linked list   | [code](Searching_Programs/BinarySearch.c)          | [Algorithms](Algorithms/binarySearch.md)   |
 |3  | infix to postfix using stack  | [code](Searching_Programs/BinarySearch.c)          | [Algorithms](Algorithms/binarySearch.md)   |
 
@@ -47,7 +47,7 @@
 -> In Queue the first element pushed is the ``last`` element to be poped. (FIFO)
  |Sno:| program        |  Code          | Algorithm   |
 |----| ------------- | ------------- |-------------|
-|1   | circular queue   | [code](Searching_Programs/LinearSearch.c)          |  [Algorithms](Algorithms/linearSearch.md)   |
+|1   | circular queue   | [code](Queue.c)          |  [Algorithms](Algorithms/linearSearch.md)   |
 |2   | queue using linked list   | [code](Searching_Programs/BinarySearch.c)          | [Algorithms](Algorithms/binarySearch.md)   |
  
 
