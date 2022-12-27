@@ -60,6 +60,6 @@
 |2   |Add node at start (singley)  | [code](LinkedList/addAtStart.c)                 
 |3  |Add node at End (singley) | [code](LinkedList/addAtEnd.c)        
 |4  |Add node at given position (singley)  | [code](LinkedList/addAtRandom.c)
-|4  | Doubley linked List  | [code](LinkedList/addAtRandom.c)
-|4  | Polynomial Addition using LinkedList  | [code](LinkedList/addAtRandom.c)
+|5  | Doubley linked List  | [code](LinkedList/addAtRandom.c)
+|6  | Polynomial Addition using LinkedList  | [code](LinkedList/addAtRandom.c)
 
