@@ -22,7 +22,7 @@
 |3   | Selection Sort| [code](Sorting_Programs/SelectionSort.c)          | [Algorithms](Algorithms/selectionSort.md)   |
 |4   | Quick Sort     | [code](Sorting_Programs/Quicksort.c)          | [Algorithms](Algorithms/quickSort.md)   |
 |5   | Merge Sort    | [code](Sorting_Programs/MergeSort.c)         | [Algorithms](Algorithms/MergeSort.md)  |
-|6   | Heap Sort    | [code](Sorting_Programs/heapSort.c)         | [Algorithms](Algorithms/heapSort.md)  |
+|6   | Heap Sort    | [code](heapSort.c)         | [Algorithms](Algorithms/heapSort.md)  |
 
   
 ## Searching Algorithms
