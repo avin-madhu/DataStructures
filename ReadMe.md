@@ -37,9 +37,9 @@
 -> In stack the first element pushed is the ``first`` element to be poped. (LIFO)
  |Sno:| program        |  Code          | Algorithm   |
 |----| ------------- | ------------- |-------------|
-|1   | stack using array    | [code](stackUsingArray.c)          |  [Algorithms](Algorithms/linearSearch.md)   |
-|2   | stack using linked list   | [code](stackUsingList.c)          | [Algorithms](Algorithms/binarySearch.md)   |
-|3  | infix to postfix using stack  | [code](infixToPostFix.c)          | [Algorithms](Algorithms/binarySearch.md)   |
+|1   | stack using array    | [code](stackUsingArray.c)          |  [Algorithms](Algorithms/stackUsingArray.md)   |
+|2   | stack using linked list   | [code](stackUsingList.c)          | [Algorithms](Algorithms/stackUsingList.md)   |
+|3  | infix to postfix using stack  | [code](infixToPostFix.c)          | [Algorithms](Algorithms/infixToPostfix.md)   |
 
 
 ## Queue
@@ -47,8 +47,8 @@
 -> In Queue the first element pushed is the ``last`` element to be poped. (FIFO)
  |Sno:| program        |  Code          | Algorithm   |
 |----| ------------- | ------------- |-------------|
-|1   | circular queue   | [code](Queue.c)          |  [Algorithms](Algorithms/linearSearch.md)   |
-|2   | queue using linked list   | [code](queueUsingList.c)          | [Algorithms](Algorithms/binarySearch.md)   |
+|1   | circular queue   | [code](Queue.c)          |  [Algorithms](Algorithms/circularQueue.md)   |
+|2   | queue using linked list   | [code](queueUsingList.c)          | [Algorithms](Algorithms/biarySearch.md)   |
  
 
 
