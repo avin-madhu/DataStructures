@@ -56,7 +56,7 @@
   
   |Sno:| Types of List        |  Code          | 
 |----| ------------- | ------------- |
-|1   | Singular List    | [code](LinkedList/SingularList.c)         
+|1   | Singular List    | [code](LinkedList/SingleyList.c)         
 |2   |Add node at start (singley)  | [code](LinkedList/addAtStart.c)                 
 |3  |Add node at End (singley) | [code](LinkedList/addAtEnd.c)        
 |4  |Add node at given position (singley)  | [code](LinkedList/addAtRandom.c)
