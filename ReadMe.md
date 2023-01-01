@@ -34,7 +34,7 @@
 
 ## Stack
 
--> In stack the first element pushed is the ``first`` element to be poped. (LIFO)
+-> In stack the ``last`` element pushed is the ``first`` element to be poped. (LIFO)
  |Sno:| program        |  Code          | Algorithm   |
 |----| ------------- | ------------- |-------------|
 |1   | stack using array    | [code](stackUsingArray.c)          |  [Algorithms](Algorithms/stackUsingArray.md)   |
@@ -44,7 +44,7 @@
 
 ## Queue
 
--> In Queue the first element pushed is the ``last`` element to be poped. (FIFO)
+-> In Queue the ``first`` element inserted is the ``first`` element to be taken out. (FIFO)
  |Sno:| program        |  Code          | Algorithm   |
 |----| ------------- | ------------- |-------------|
 |1   | circular queue   | [code](Queue.c)          |  [Algorithms](Algorithms/circularQueue.md)   |
