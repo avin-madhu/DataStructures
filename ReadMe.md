@@ -64,7 +64,7 @@
 |5  | Doubley linked List  | [code](doubleyLinkedList.c)
 |6  | Polynomial Addition using LinkedList  | [code](polynomialAdd.c)
 
-## trees
+## Trees
 
   |Sno:| Name        |  Code          | 
 |----| ------------- | ------------- |
