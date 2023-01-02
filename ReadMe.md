@@ -64,3 +64,8 @@
 |5  | Doubley linked List  | [code](doubleyLinkedList.c)
 |6  | Polynomial Addition using LinkedList  | [code](polynomialAdd.c)
 
+## trees
+
+  |Sno:| Name        |  Code          | 
+|----| ------------- | ------------- |
+|1   | Binary Search Tree    | [code](binarySearchTree.c)     
