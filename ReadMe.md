@@ -10,6 +10,7 @@
 * [Stack](#stack)
 * [Queue](#Queue)
 * [Linked List](#linked-list)
+* [Graph](#Graph)
 
 
 
@@ -69,3 +70,11 @@
   |Sno:| Name        |  Code          | 
 |----| ------------- | ------------- |
 |1   | Binary Search Tree    | [code](binarySearchTree.c)     
+
+
+## Graph
+
+  |Sno:| Name        |  Code          | 
+|----| ------------- | ------------- |
+|1   | Depth First Search (DFS)    | [code](dfs.c)  
+|2   | Breadth First Search (BFS)    | [code](bfs.c)  
