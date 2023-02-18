@@ -1,148 +1,164 @@
-#include<stdio.h>
-#define size 5
-int F =-1, R =-1, Q[size];
-
-int is_full()
+#include <stdio.h>
+#define size 6
+int dq[size];
+int rear=-1,front =-1;
+int isFull()
 {
-	if(F==(R+1)%size)
-		return(1);
-	else
-		return(0);
+    if((front == rear+1)||(front==0&&rear==size-1))
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+int isEmpty()
+{
+    if(front==-1&&rear==-1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
 }
 
-int is_empty()
+
+
+void insert_front(int x)
 {
-	if(F==-1 && R==-1)
-		return(1);
-	else
-		return(0);
+   if(isFull())
+   {
+    printf("The Queue is Full!");
+   }
+   else if(isEmpty())
+   {
+    front=rear=0;
+    dq[front]=x;
+   }
+   else if(front ==0)
+   {
+    front = size -1;
+    dq[front]=x;
+   }
+   else
+   {
+    front--;
+   dq[front]=x;
+   
+   }
 }
-void Insert_rear(int ele)
+
+void insert_rear(int x)
 {
-  R=(R+1)%size;
-  if(F==-1)
-  F=0;
-  Q[R]=ele;
+    if(isFull())
+   {
+    printf("The Queue is Full!");
+   }
+   else if(isEmpty())
+   {
+    front=rear=0;
+    dq[rear]=x;
+   }
+   else if (rear==size-1)
+   {
+    rear = 0;
+    dq[rear]=x;
+   }
+   else
+   {
+    rear++;
+    dq[rear]=x;
+    
+   }
 }
-void Insert_front(int ele)
+
+void delete_front()
 {
-if(F==-1)
-F=R=0;
-else
-{
-if(F==0)
-F=size-1;
-else
-F=F-1;
+    if(isEmpty())
+    {
+        printf("The queue is Empty!");
+    }
+    else if(front==rear)
+    {
+        front = rear = -1;
+    }
+    else if(front == size -1)
+    {
+        front =0;
+    }
+    else{
+        front++;
+    }
 }
-Q[F]=ele;
+
+void delete_rear()
+{
+    if(isEmpty())
+    {
+        printf("The queue is Empty!");
+    }
+    else if(front==rear)
+    {
+        front = rear = -1;
+    }
+    else if(rear == 0)
+    {
+        rear = size -1;
+    }
+    else{
+        rear--;
+    }
 }
-int Delete_rear()
+
+
+void disp()
 {
- int ele=Q[R];
- if(F==R)
- F=R=-1;
-else
-{
- if(R==0)
- R=size-1;
- else
- R=R-1;
- return (ele);
+    int i = front;
+
+  printf("\nThe Queue: ");
+    while(i!=rear)
+    {
+        printf(" %d",dq[i]);
+        i = (i+1)%size;
+    }
+    printf(" %d",dq[rear]);
 }
+
+
+int main()
+{
+    int ch,num;
+    char con;
+    do 
+    {
+       
+       printf("OPERATIONS MENU\n---------------------\n1. Insert Front\n2. Insert Rear\n3. Delete Front\n4. Delete Rear\n---------------------\nEnter your choice: ");
+       scanf("%d",&ch);
+
+       switch(ch)
+       {
+        case 1: printf("Enter the Number: ");
+        scanf("%d",&num);
+        insert_front(num);
+        disp();break;
+
+        case 2: printf("Enter the Number: ");
+        scanf("%d",&num);
+        insert_rear(num);
+        disp(); break;
+
+        case 3: delete_front();disp();break;
+
+        case 4: delete_rear();disp();break;
+
+        default: printf("Invalid Entry!");
+
+        
+       }
+       printf("\n\nWant to continue?(y/n): ");
+       scanf(" %c",&con);
+    }while(con!='n');
 }
-int Delete_front()
-{
- int ele=Q[F];
-{
- if(F==R)
- F=R=-1;
- else
- F=(F+1)%size;
- }
- return(ele);
- }
-void Display()
-{
- if(is_empty())
-		printf("QUEUE IS EMPTY");
-	else
-	{
-		int i;
-		for(i=F;i!=R;i=(i+1)%size)
-			printf("%d \n",Q[i]);
-		printf("%d \n",Q[R]);
-	}
-}
-void main()
-{
- int choe,ele;
-do
-{
-printf("\n The choice are: \n1.Insert_rear\n2.Insert_front\n3.Delete_rear\n4.Delete_front\n5.Isfull\n6.Isempty\n7.Display\n8.Exit\n");
-printf("Enter your choice required:");
-			scanf("%d",&choe);
-			switch(choe)
-			{
-				case 1: if(is_full())
-						printf("QUEUE FULL");
-					else
-					{
-						printf("\nEnter the number to be inserted:");
-						scanf("%d",&ele);
-						Insert_rear(ele);
-					}
-					break;
-
-				case 2: if(is_full())
-						printf("QUEUE FULL");
-					else
-					{
-						printf("\nEnter the number to be inserted:");
-						scanf("%d",&ele);
-						Insert_front(ele);
-					}
-					break;
-
-
-				case 3: if(is_empty())
-						printf("QUEUE IS EMPTY");
-					else
-					{
-						ele=Delete_rear();
-						printf("The deleted element is %d",ele);
-					}
-					break;
-
-				case 4: if(is_empty())
-						printf("QUEUE IS EMPTY");
-					else
-					{
-						ele=Delete_front();
-						printf("The deleted element is %d",ele);
-					}
-					break;
-
-				case 5: if(is_full())
-						printf("QUEUE FULL");
-					else
-						printf("SPACE AVAILABLE");
-					break;
-
-				case 6: if(is_empty())
-						printf("QUEUE IS EMPTY");
-					else
-						printf("MEMBERS OCCUPIED");
-					break;
-
-				case 7: printf("\nThe elements in the Queue :\n");
-					Display();
-					break;
-				
-				case 8: break;
-
-				default : printf("\nINVALID");
-			}
-		}while(choe!=8);
-	}
-		
