@@ -80,4 +80,4 @@
 |1   | Depth First Search (DFS)    | [code](dfs.c)  
 |2   | Breadth First Search (BFS)    | [code](bfs.c)  
 
-[GO BACK TO TOP](#-contents-) 
+[GO BACK TO TOP](#-contents-):arrow_up:
