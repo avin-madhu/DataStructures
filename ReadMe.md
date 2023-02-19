@@ -51,6 +51,7 @@
 |1   | circular queue   | [code](Queue.c)          |  [Algorithms](Algorithms/circularQueue.md)   |
 |2   | queue using linked list   | [code](queueUsingList.c)          | [Algorithms](Algorithms/biarySearch.md)   |
 |3   | Double Ended Queue   | [code](doubleEndedQueue.c)          | [Algorithms](Algorithms/biarySearch.md)   |
+|4   | Priority Queue   | [code](PriorityQueue.c)          | [Algorithms](Algorithms/biarySearch.md)   |
  
 
 
