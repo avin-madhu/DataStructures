@@ -10,7 +10,7 @@
 * [Stack](#stack)
 * [Queue](#Queue)
 * [Linked List](#linked-list)
-* [Graph](#Graph)
+* [Graphs](#Graph)
 
 
 
