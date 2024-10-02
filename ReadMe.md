@@ -25,6 +25,14 @@
 |5   | Merge Sort    | [code](Sorting_Programs/MergeSort.c)         | [Algorithms](Algorithms/MergeSort.md)  |
 |6   | Heap Sort    | [code](heapSort.c)         | [Algorithms](Algorithms/heapSort.md)  |
 
+Simple Python code for the sorting algorithms
+
+|Sno:| Method        |  Code          |
+|----| ------------- | ------------- |
+|1   | Bubble Sort   | [code](Sorting_Programs/python/bubblesort.py)          |  
+|2   | Insertion Sort| [code](Sorting_Programs/python/insertionsort.py)          | 
+|3   | Selection Sort| [code](Sorting_Programs/python/selectionsort.py)          | 
+|4   | Quick Sort     | [code](Sorting_Programs/python/quicksort.py)          | 
   
 ## Searching Algorithms
   
