@@ -69,13 +69,14 @@ void display()
   }
 int main()
 {
-int choicer,choice,flag=0;
+int choice,flag=0;
+char ch;
 do
 {
-printf("Menu list\n--------------------------\n\n1. Insert\n2. Delete\n3. display\n4. is Full?\n5. is Empty?\n6.Exit\n");
+printf("Menu list\n--------------------------\n\n1. Insert\n2. Delete\n3. display\n4. is Full?\n5. is Empty?\n");
 printf("Enter your choice: ");
-scanf("%d",&choicer);
-switch(choicer)
+scanf("%d",&choice);
+switch(choice)
 {
 case 1: printf("Enter the element: ");
 scanf("%d",&el);
@@ -97,14 +98,11 @@ case 5: flag = isEmpty();
         printf("The queue is Empty!");
         else
         printf("The queue is not Empty");break;
-case 6:break;
+
 
 default: printf("Invalid Entry!!"); break;
 }
-
-printf("Do you want to continue? ");
-printf("----------------------\n Press 1 for YES\nPress 5 for NO\nChoice => ");
-scanf("%d",&choice);
- }while(choice!=5);
-
+printf("\n----------------------\ncontinue? (y/n): ");
+scanf(" %c",&ch);
+ }while(ch=='y');
 }
